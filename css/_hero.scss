@@ -1,0 +1,9 @@
+@use 'colors';
+
+.hero-cta {
+  max-width: 400px;
+  margin: 0 auto;
+  .hero-message {
+    text-align: center;
+  }
+}

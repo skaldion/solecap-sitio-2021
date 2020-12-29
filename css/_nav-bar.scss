@@ -1,0 +1,32 @@
+@use 'colors';
+
+.navigation-bar-top {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: white;
+  .navigation-logo, .navigation-item {
+    color: colors.$blue-dark;
+  }
+  .navigation-logo {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    .navigation-item {
+      padding: .5rem;
+      &.active {
+        color: colors.$white;
+        background-color: colors.$purple;
+      }
+    }
+  }
+}

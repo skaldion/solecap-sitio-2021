@@ -1,0 +1,11 @@
+<div class="navigation-bar-top">
+    <a class="navigation-logo" href="<%- site.url %>"><%- site.companyName %></a>
+    <nav class="navigation">
+        <% collections.pages.forEach(function (navPage) { %>
+            <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"
+               href="<%- navPage.url %>">
+                <%= navPage.data.title %>
+            </a>
+        <% });%>
+    </nav>
+</div>
