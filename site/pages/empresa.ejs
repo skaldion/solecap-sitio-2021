@@ -2,8 +2,50 @@
 title: 'Empresa'
 permalink: 'empresa/index.html'
 ---
-<section class="hero-cta">
-    <div class="hero-message">
-        <h1>Empresa</h1>
-    </div>
-</section>
+<%- include('/hero', {
+mainText: 'NOSOTROS',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+],
+ctaButtonText: 'Contactanos',
+additionalClasses: 'cool-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Cultura',
+image: { src: '/images/taxes.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
+features: [
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+],
+additionalClasses: 'indigo-bg image-left'
+})
+%>
+
+<%- include('/mapa') %>
+
+<%- include('/cta', {
+mainText: 'Sanitizacion de espacios',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+ctaButtonText: 'Leer mas',
+additionalClasses: 'dark-blue-bg',
+noButton: false
+})
+%>
+
+<%- include('/servicios') %>
+
+<%- include('/cta', {
+mainText: 'CTA',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+ctaButtonText: 'Contactanos!',
+additionalClasses: 'city-bg',
+noButton: false
+})
+%>
