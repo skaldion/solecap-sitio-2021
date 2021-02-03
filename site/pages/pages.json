@@ -1,4 +1,5 @@
 {
 	"layout": "base.ejs",
-	"tags": "pages"
+	"tags": "pages",
+	"hideInNav": false
 }

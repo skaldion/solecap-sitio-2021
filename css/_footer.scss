@@ -1,0 +1,25 @@
+@use 'fonts';
+@use 'colors';
+
+.footer-block {
+  padding: 50px 0 200px;
+  background-color: colors.$blue-001;
+  color: colors.$white;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        color: colors.$blue-003;
+        font-weight: bold;
+        transition: all .2s ease-in-out;
+        &:hover {
+          color: lighten(colors.$blue-003, 20%);
+        }
+      }
+    }
+  }
+
+}

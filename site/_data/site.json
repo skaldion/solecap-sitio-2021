@@ -1,9 +1,9 @@
 {
 	"siteName": "Skaldion Eleventy Template",
-	"title": "Eleventy Template by Skaldion",
-	"description": "Eleventy Template for Skaldion Websites",
-	"url": "https://example.com",
+	"title": "Solecap",
+	"description": "Solecap Websites",
+	"url": "https://localhost:8080",
 	"locale": "es",
 	"author": "Skaldion",
-	"companyName": "Skaldion"
+	"companyName": "Solecap"
 }

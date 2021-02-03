@@ -1,0 +1,37 @@
+---
+title: 'Seguridad'
+permalink: 'servicios/seguridad/index.html'
+description: 'Seguridad privada'
+href: '/servicios/seguridad'
+---
+<%- include('/hero', {
+mainText: 'SEGURIDAD',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+],
+ctaButtonText: 'Contactanos',
+additionalClasses: 'cool-bg'
+})
+%>
+
+<%- include('/grid', {
+mainText: 'Beneficios',
+elements: [
+{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'CTA',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+ctaButtonText: 'Contactanos!',
+additionalClasses: 'city-bg',
+noButton: false
+})
+%>

@@ -3,6 +3,7 @@
 body {
   background-color: colors.$grey;
   margin: 0;
+  color: colors.$blue-002;
 
   &.modal-open {
     overflow: hidden;
@@ -17,11 +18,73 @@ a, button, .button {
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-h1 {
+h2 {
+  font-family: HallFetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.dark-blue-bg {
+  background-color: colors.$blue-002;
   color: colors.$white;
-  background-color: colors.$purple;
-  border-radius: 10px;
-  margin-top: 30px;
+}
+
+.purple-bg {
+  background-color: #4C2F70;
+  color: colors.$white;
+}
+
+.white-bg {
+  background-color: colors.$white;
+  color: colors.$blue-002;
+}
+
+.light-blue-bg {
+  background-color: lighten(colors.$blue-004, 30%);
+  color: colors.$white;
+}
+
+.grey-bg {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+.city-bg {
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/soumaya.jpg");
+  background-color: #0A2368;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.cool-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/cool-background.png");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.indigo-bg {
+  background-color: #91456A;
+  color: colors.$white;
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.button-group {
+  text-align: center;
 }

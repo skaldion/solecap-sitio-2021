@@ -1,9 +1,100 @@
 ---
 layout: base.ejs
 ---
-<%- include('/hero-cta', {
-        mainText: 'Hello world!',
-        secondaryText: 'This is our eleventy tepmlate.',
-        ctaButtonText: 'Click me!'
-    })
+<%- include('/hero-video', {
+mainText: 'SOLECAP',
+firstColumnText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+],
+secondColumnText: [
+'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+],
+ctaButtonText: 'Contactanos',
+additionalClasses: 'cool-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Nuestra posicion ante la pandemia',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+ctaButtonText: 'Leer mas',
+additionalClasses: 'city-bg',
+noButton: false
+})
+%>
+
+<%- include('/cta', {
+mainText: 'Integrated Facilities Management',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+noButton: true,
+ctaButtonText: '',
+additionalClasses: 'indigo-bg'
+})
+%>
+
+<%- include('/servicios')
+%>
+
+<%- include('/cta', {
+mainText: 'Sanitizacion de espacios',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+ctaButtonText: 'Leer mas',
+additionalClasses: 'dark-blue-bg',
+noButton: false
+})
+%>
+
+<%- include('/side-image', {
+heading: 'Ventaja Competitiva',
+image: { src: '/images/taxes.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
+features: [
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+],
+additionalClasses: 'indigo-bg image-left'
+})
+%>
+
+<%- include('/cards', {
+mainText: 'Historias de Exito',
+cards: [
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'},
+],
+noButton: true,
+ctaButtonText: 'Cotizar ahora',
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/carousel', {additionalClasses: 'purple-bg'} ) %>
+
+<%- include('/grid', {
+mainText: 'Certificaciones',
+elements: [
+{ htmlContent: '<h3>Certificacion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Certificacion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Certificacion</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+],
+additionalClasses: 'grey-bg'
+})
+%>
+
+<%- include('/cta', {
+mainText: 'CTA',
+secondaryText: [
+'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. '
+],
+ctaButtonText: 'Contactanos!',
+additionalClasses: 'city-bg',
+noButton: false
+})
 %>

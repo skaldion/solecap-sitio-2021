@@ -1,0 +1,20 @@
+<section class="side-image-block <%- additionalClasses %>">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2><%- heading %></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg image">
+                <img src="<%- image.src %>" alt="<%- image.alt %>">
+            </div>
+            <div class="col-sm content">
+                <% features.forEach((feature) => { %>
+                    <h3><%- feature.title %></h3>
+                    <p><%- feature.description %></p>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+</section>

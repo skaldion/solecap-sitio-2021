@@ -1,0 +1,8 @@
+<%- include('/cards', {
+mainText: 'Servicios',
+cards: collections.servicios.map(servicio => servicio.data),
+noButton: false,
+ctaButtonText: 'Cotizar ahora',
+additionalClasses: 'grey-bg'
+})
+%>

@@ -1,0 +1,33 @@
+<section class="footer-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h4>Solecap</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Telefono</li>
+                    <li>Email</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Servicios</h4>
+                <ul>
+                    <% collections.servicios.forEach((navPage) => { %>
+                        <% if (!navPage.data || !navPage.data.title) return;%>
+                        <li>
+                            <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"
+                               href="<%- navPage.url %>">
+                                <%= navPage.data.title %>
+                            </a>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

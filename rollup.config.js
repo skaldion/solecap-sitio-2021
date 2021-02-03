@@ -15,9 +15,10 @@ const plugins = [
 	}),
 	nodeResolve(),
 ];
-const external = ['jquery'];
+const external = ['jquery', 'popper'];
 const globals = {
 	jquery: 'jQuery', // Ensure we use jQuery which is always available even in noConflict mode
+	popper: 'Popper'
 };
 
 module.exports = {
