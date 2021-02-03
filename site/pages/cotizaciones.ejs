@@ -2,8 +2,20 @@
 title: 'Cotizaciones'
 permalink: 'cotizaciones/index.html'
 ---
-<section class="hero-cta">
-    <div class="hero-message">
-        <h1>Cotizaciones</h1>
-    </div>
-</section>
+<div id="app">
+    <service-display :cart='cart' @add-to-cart="updateCart"></service-display>
+</div>
+
+<!-- Import Vue.js -->
+<script src="https://unpkg.com/vue@next"></script>
+<!-- Import App -->
+<script src="/assets/app/main.js"></script>
+<!-- Import Components -->
+<script src="/assets/app/components/ProductDisplay.js"></script>
+<script src="/assets/app/components/ReviewForm.js"></script>
+<script src="/assets/app/components/ReviewList.js"></script>
+<!-- Mount App -->
+<script>
+	const mountedApp = app.mount('#app')
+    console.log('mounted app')
+</script>
