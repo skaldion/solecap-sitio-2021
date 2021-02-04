@@ -3,6 +3,11 @@
         <div class='row'>
             <div class='col'><h2><%- mainText %></h2></div>
         </div>
+        <% if (secondaryText) { %>
+            <div class='row'>
+                <div class='col'><p><%- secondaryText %></p></div>
+            </div>
+        <% } %>
         <div class='row'>
     <% cards.forEach(data => {%>
         <div class='col-md-4'>
