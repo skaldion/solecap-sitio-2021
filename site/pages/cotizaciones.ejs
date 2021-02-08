@@ -2,16 +2,23 @@
 title: 'Cotizaciones'
 permalink: 'cotizaciones/index.html'
 ---
-<div id="app">
-    <service-display :cart='cart' @add-to-cart="updateCart"></service-display>
-</div>
+<section class='cotizaciones-section'>
+    <div id="app" class='pb-md-5'>
+        <service-display
+                :cart='cart'
+                :services='services'
+                @add-to-cart="addToCart"
+                @remove-from-cart="removeFromCart"
+        ></service-display>
+    </div>
+</section>
 
 <!-- Import Vue.js -->
 <script src="https://unpkg.com/vue@next"></script>
 <!-- Import App -->
 <script src="/assets/app/main.js"></script>
 <!-- Import Components -->
-<script src="/assets/app/components/ProductDisplay.js"></script>
+<script src="/assets/app/components/ServiceDisplay.js"></script>
 <script src="/assets/app/components/ReviewForm.js"></script>
 <script src="/assets/app/components/ReviewList.js"></script>
 <!-- Mount App -->
