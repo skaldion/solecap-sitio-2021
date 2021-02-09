@@ -43,11 +43,21 @@ app.component('service-display', {
             v-for="(item, index) in cart" 
             :key='item.id'
             class="list-group-item d-flex justify-content-between lh-condensed" >
-          <div>
-            <h6 class="my-0">{{item.name}}</h6>
-            <small class="text-muted">{{item.description}}</small>
-          </div>
-          <div class="text-muted">{{ '$' +item.price}}</div>
+            <div>
+                <h6 class="my-0">{{item.name}}</h6>
+                <small class="text-muted">{{item.description}}</small>
+            </div>
+            <div class="text-muted">
+                <small>Precio unitario </small>
+                <span>{{ '$' +item.price}} X </span> 
+                <input 
+                    v-model='item.quantity'
+                    type='number' 
+                    size='3' 
+                    minlength='1' 
+                    maxlength='999'>
+                <span> = {{ '$' + calculateItemPrice(item) }}</span>
+            </div>
           <div 
             class='close-button'
             v-on:click='removeFromCart(index)'
@@ -115,11 +125,14 @@ app.component('service-display', {
       },
       removeFromCart(index) {
           this.$emit('remove-from-cart', index)
+      },
+      calculateItemPrice(item) {
+          return item.quantity * item.price
       }
   },
   computed: {
       getTotal() {
-          return this.cart.reduce((sum, item) => sum + item.price, 0) || 0
+          return this.cart.reduce((sum, item) => sum + item.price * item.quantity, 0) || 0
       }
   }
 })

@@ -28,8 +28,16 @@ const app = Vue.createApp({
 				return;
 			}
 			let selectedItem = this.services.find(item => item.id === id)
+
 			if (selectedItem) {
-				this.cart.push(selectedItem)
+				let existingItem = this.cart.find(item => item.id === id)
+
+				if (existingItem) {
+					existingItem.quantity++;
+				} else {
+					selectedItem.quantity = 1;
+					this.cart.push(selectedItem)
+				}
 			}
 		},
 		removeFromCart(selectedIndex) {
