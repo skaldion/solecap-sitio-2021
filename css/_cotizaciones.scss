@@ -1,0 +1,27 @@
+@use 'fonts';
+@use 'colors';
+
+
+
+.cotizaciones-section {
+
+  .list-group-item {
+    padding: 0.75rem 3rem 0.75rem 1.25rem;
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0 10px 2px;
+      border-left: 1px solid colors.$grey-002;
+      border-bottom: 1px solid colors.$grey-002;
+      color: #6c757d;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &.empty {
+      color: #6c757d;
+    }
+  }
+}
