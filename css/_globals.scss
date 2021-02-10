@@ -74,6 +74,29 @@ h2 {
   color: colors.$white;
 }
 
+.empresa-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/empresa.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.index-hero-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/mainoffice.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+
+}
+
 .indigo-bg {
   background-color: #91456A;
   color: colors.$white;

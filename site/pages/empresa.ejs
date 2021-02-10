@@ -8,19 +8,29 @@ secondaryText: [
 'Somos un grupo formado por empresas 100% mexicanas, conformadas por equipos de profesionales especializados en la prestación de servicios integrales, el desarrollo de proyectos y la gestión integral de activos.'
 ],
 ctaButtonText: 'Contactanos',
-additionalClasses: 'cool-bg'
+additionalClasses: 'empresa-bg'
 })
 %>
 
 <%- include('/side-image', {
 heading: 'Cultura',
-image: { src: '/images/taxes.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
+image: { src: '/images/team.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
 features: [
-{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
-{ title: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' },
+{ title: '¿Quienes somos?', description: 'Somos un grupo formado por empresas 100% mexicanas, conformadas por equipos de profecionales especializados en la prestación de servicios integrales, el desarrollo de proyectos y la gestión integral de activos.' },
+{ title: '¿Que ofrecemos?', description: 'Nuestro compromiso es encontrar y desarrollar nuevos productos, así como entregar soluciones ágiles e integrales "lave en mano" hechas a la medida de las necesidades de nuestros clientes. Nos hemos aliado con empresas de manufactura y servicios, líderes en su ramo, garantizando entregar la mejor calidad en nuestros productos.' },
+{ title: '', description: '' },
 ],
 additionalClasses: 'indigo-bg image-left'
+})
+%>
+
+<%- include('/grid', {
+mainText: '',
+elements: [
+{ htmlContent: '<h3>Misión</h3><p>Agregar valor a nuestros clientes, satisfaciendo las necesidades de su negocio a través de nuestros productos, así como de la elaboración de productos innovadores y de alta calidad.</p>'},
+{ htmlContent: '<h3>Visión</h3><p>Ser la empresa líder en el ramo de facilities management y gestión de activos, convertirnos en la compañia referencia en soluciones de espacios integrados de proyectos, de manera sustentable y generando valor para nuestros clientes y para todo México.</p>'},
+],
+additionalClasses: 'grey-bg'
 })
 %>
 

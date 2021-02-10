@@ -12,7 +12,9 @@
                 <% }); %>
             </div>
             <div class='col-4'>
-                <img class='video-thumbnail' src='/images/reception.jpeg'>
+                <% if(imgSrc){%>
+                <img class='video-thumbnail' src='<%- imgSrc %>'>
+                <% } %>
             </div>
             <div class='col-4'>
                 <% secondColumnText.forEach((text) => { %>
