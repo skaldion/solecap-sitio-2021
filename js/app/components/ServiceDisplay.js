@@ -49,14 +49,14 @@ app.component('service-display', {
             </div>
             <div class="text-muted">
                 <small>Precio unitario </small>
-                <span>{{ '$' +item.price}} X </span> 
+                <span>{{ formatCurrency(item.price) }} X </span> 
                 <input 
                     v-model='item.quantity'
                     type='number' 
                     size='3' 
                     minlength='1' 
                     maxlength='999'>
-                <span> = {{ '$' + calculateItemPrice(item) }}</span>
+                <span> = {{ formatCurrency(calculateItemPrice(item)) }}</span>
             </div>
           <div 
             class='close-button'
@@ -68,7 +68,7 @@ app.component('service-display', {
             class="list-group-item">
             <div class='d-flex justify-content-between'>
               <span>Total (MXN)</span>
-              <strong>{{ '$'+getTotal }}</strong>
+              <strong>{{ formatCurrency(getTotal) }}</strong>
             </div>
         </li>
         <li 
@@ -113,7 +113,8 @@ app.component('service-display', {
 </div>`,
   data() {
     return {
-        selected: 0
+        selected: 0,
+        formatter: new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' })
     }
   },
   methods: {
@@ -128,6 +129,9 @@ app.component('service-display', {
       },
       calculateItemPrice(item) {
           return item.quantity * item.price
+      },
+      formatCurrency(amount) {
+          return this.formatter.format(amount)
       }
   },
   computed: {
