@@ -4,7 +4,7 @@
             <div class='col'><h2><%- mainText %></h2></div>
         </div>
         <% if (secondaryText) { %>
-            <div class='row'>
+            <div class='row mb-4'>
                 <div class='col'><p><%- secondaryText %></p></div>
             </div>
         <% } %>
@@ -25,7 +25,7 @@
         </div>
         <% if (!noButton) { %>
             <div class='button-group'>
-                <button class='btn btn-primary'><%- ctaButtonText %></button>
+                <a class='btn btn-primary' href='<%- ctaHref%>'><%- ctaButtonText %></a>
             </div>
         <% }%>
     </div>
