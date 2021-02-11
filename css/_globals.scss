@@ -53,6 +53,15 @@ h2 {
   color: black;
 }
 
+.city-bg {
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #0A2368;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
 .cool-bg {
   background-size: cover;
   background-attachment: local;
