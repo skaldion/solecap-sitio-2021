@@ -53,22 +53,67 @@ h2 {
   color: black;
 }
 
-.city-bg {
-  background-attachment: local;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-image: url("/images/soumaya.jpg");
-  background-color: #0A2368;
-  background-blend-mode: darken;
-  color: colors.$white;
-}
-
 .cool-bg {
   background-size: cover;
   background-attachment: local;
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("/images/cool-background.png");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-tecno-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/fiber.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-propie-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/property.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-operaci-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/upgrade.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-instala-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/cafe.jpg");
+  background-color: colors.$softgray;
+  background-blend-mode: darken;
+  color: colors.$white;
+}
+
+.serv-ambien-bg {
+  background-size: cover;
+  background-attachment: local;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("/images/ambient.jpg");
   background-color: colors.$softgray;
   background-blend-mode: darken;
   color: colors.$white;
