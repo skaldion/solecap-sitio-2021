@@ -1,17 +1,14 @@
 ---
 layout: base.ejs
 ---
-<%- include('/hero-video', {
+
+<%- include('/hero', {
 mainText: 'SOLECAP',
-firstColumnText: [
-'Somos una empresa de prestación de servicios enfocada en cada uno de los elementos de mantenimiento ya sea en oficinas corporativas o edificios industriales alrededor de la cadena de suministro. '
-],
-secondColumnText: [
-'Nuestro objetivo es brindar servicios de mantenimiento con estándares adecuados para evitar fallos y problemas que puedan afectar a la cadena de producción,enfocándonos en ofrecer la mejor calidad y servicio en el área de ¨Facility Services¨'
+secondaryText: [
+'Somos una empresa de prestación de servicios enfocada en cada uno de los elementos de mantenimiento ya sea en oficinas corporativas o edificios industriales alrededor de la cadena de suministro.',
 ],
 ctaButtonText: 'Contactanos',
-additionalClasses: 'index-hero-bg',
-    imgSrc: ""
+additionalClasses: 'index-hero-bg'
 })
 %>
 
@@ -29,7 +26,7 @@ noButton: false
 <%- include('/cta', {
 mainText: 'Integrated Facilities Management',
 secondaryText: [
-'Nuestro objetivo es ayudarte a tener un desempeño excelente manteniendo todos los insumos relacionados con la cadena de producción en perfecto estado.'
+'Nuestro objetivo es brindar servicios de mantenimiento con estándares adecuados para evitar fallos y problemas que puedan afectar a la cadena de producción,enfocándonos en ofrecer la mejor calidad y servicio en el área de "Facility Services".'
 ],
 noButton: true,
 ctaButtonText: '',
@@ -75,20 +72,18 @@ additionalClasses: 'grey-bg'
 })
 %>
 
-<%- include('/carousel', {additionalClasses: 'purple-bg'} ) %>
-
 <%- include('/grid', {
 mainText: 'Certificaciones',
 elements: [
 { htmlContent: '<h3>ISO 9001:2015</h3><p></p>'},
 { htmlContent: '<h3>Empresa Socialmente Responsable</h3><p></p>'},
 ],
-additionalClasses: 'grey-bg'
+additionalClasses: '-bg'
 })
 %>
 
 <%- include('/cta', {
-mainText: 'Solecap,expertos en facility services',
+mainText: 'Solecap, expertos en facility services',
 secondaryText: [
 'Somos unica empresa 100%  dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuales son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
 ],
