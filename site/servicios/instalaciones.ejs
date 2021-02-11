@@ -9,11 +9,22 @@ imgSrc: '/images/soporte.jpg'
 <%- include('/hero', {
 mainText: 'Servicio de Soporte a Instalaciones ',
 secondaryText: [
-'Este servicio está conformado por aquellas actividades que son fundamentales en la operación de un edificio corporativo u oficinas administrativas dentro de una planta Productiva, es decir; elementos catalogados como “Soft” que no afectan a la cadena de producción pero generan un ambiente adecuado en las funciones administrativas.',
-    'Algunos servicios dentro de esta categoría son: Limpieza, jardinería, aire acondicionado (HVAC) o servicios de recepción, cafetería, Ups (servicios de respaldo de energía) sistema contra incendio de los edificios, entre otros.'
+'Enfocados en general el mejor ambiente laboral en tu empresa',
+    ''
 ],
 ctaButtonText: 'Contactanos',
 additionalClasses: 'serv-instala-bg'
+})
+%>
+
+<%- include('/side-image', {
+heading: '',
+image: { src: '/images/lounge.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
+features: [
+{ title: '', description: 'Este servicio está conformado por aquellas actividades que son fundamentales en la operación de un edificio corporativo u oficinas administrativas dentro de una planta Productiva, es decir; elementos catalogados como “Soft” que no afectan a la cadena de producción pero generan un ambiente adecuado en las funciones administrativas.' },
+{ title: '', description: 'Algunos servicios dentro de esta categoría son: Limpieza, jardinería, aire acondicionado (HVAC) o servicios de recepción, cafetería, Ups (servicios de respaldo de energía) sistema contra incendio de los edificios, entre otros. ' },
+],
+additionalClasses: 'indigo-bg image-left'
 })
 %>
 
@@ -31,7 +42,7 @@ additionalClasses: 'grey-bg'
 <%- include('/cta', {
 mainText: 'Solecap,expertos en facility services',
 secondaryText: [
-'Somos unica empresa 100%  dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuales son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
+'¿Quieres generar un ambiente laboral sano? Nosotros te decimos cómo lograrlo'
 ],
 ctaButtonText: 'Contactanos!',
 additionalClasses: 'city-bg',
