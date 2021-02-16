@@ -12,6 +12,14 @@
                     </button>
                 </div>
             <% } %>
+            <% if (href) {%>
+                <div class='button-group'>
+                    <a href='<%- href %>' class="btn btn-primary">
+                        <%- ctaButtonText %>
+                    </a>
+                </div>
+            <% } %>
+
         </div>
     </div>
 </section>

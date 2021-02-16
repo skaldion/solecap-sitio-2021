@@ -6,11 +6,16 @@
   background-color: colors.$blue-001;
   color: colors.$white;
 
+  .footer-section {
+    padding-bottom: 2rem;
+  }
+
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
     li {
+      padding: 0.5rem 0;
       a {
         color: colors.$blue-003;
         font-weight: bold;
@@ -19,6 +24,12 @@
           color: lighten(colors.$blue-003, 20%);
         }
       }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .footer-section {
+      padding: 0;
     }
   }
 

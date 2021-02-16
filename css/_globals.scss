@@ -28,6 +28,10 @@ h2 {
   text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+}
+
 .dark-blue-bg {
   background-color: colors.$blue-002;
   color: colors.$white;

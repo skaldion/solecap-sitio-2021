@@ -1,4 +1,6 @@
 const fs = require('fs');
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setTemplateFormats(['ejs', 'md', 'html', 'txt']);
@@ -11,6 +13,19 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.setEjsOptions({
 		rmWhitespace: true,
+	});
+
+	/* Markdown Overrides */
+	let markdownLibrary = markdownIt({
+		html: true,
+		breaks: true,
+		linkify: true
+	});
+
+	eleventyConfig.setLibrary("md", markdownLibrary);
+
+	eleventyConfig.addCollection("latestPosts", function(collectionApi) {
+		return collectionApi.getFilteredByTag('blog').filter((item, index) => index < 2 );
 	});
 
 	eleventyConfig.setBrowserSyncConfig({

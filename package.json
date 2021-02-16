@@ -37,6 +37,8 @@
 		"rimraf": "^3.0.2",
 		"rollup": "^2.33.3",
 		"sass": "^1.29.0",
-		"terser": "^5.5.0"
+		"terser": "^5.5.0",
+		"markdown-it": "^8.4.2",
+		"markdown-it-anchor": "^5.2.5"
 	}
 }
