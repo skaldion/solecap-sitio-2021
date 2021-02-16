@@ -18,7 +18,7 @@ additionalClasses: 'serv-instala-bg'
 %>
 
 <%- include('/side-image', {
-heading: '',
+heading: 'Creamos el ambiente adecuado',
 image: { src: '/images/lounge.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
 features: [
 { title: '', description: 'Este servicio está conformado por aquellas actividades que son fundamentales en la operación de un edificio corporativo u oficinas administrativas dentro de una planta Productiva, es decir; elementos catalogados como “Soft” que no afectan a la cadena de producción pero generan un ambiente adecuado en las funciones administrativas.' },
@@ -29,11 +29,11 @@ additionalClasses: 'indigo-bg image-left'
 %>
 
 <%- include('/grid', {
-mainText: 'Beneficios',
+mainText: '',
 elements: [
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Productividad</h3><p>Tener unas instalaciones en estado óptimo te ayuda a generar un ambiente de trabajo positivo y la productividad de tus empleados puede verse incrementada.</p>'},
+{ htmlContent: '<h3>Presentación</h3><p>Contar con unos jardines e instalaciones bien cuidadas, es la mejor carta de presentación que puedes tener cuando recibas visitas importantes en tu oficina.</p>'},
+{ htmlContent: '<h3>Seguridad</h3><p>Haces sentir cuidados y protegidos a colaboradores y clientes en caso de una emergencia como sismos o incendios.</p>'},
 ],
 additionalClasses: 'grey-bg'
 })
@@ -46,7 +46,8 @@ secondaryText: [
 ],
 ctaButtonText: 'Contactanos!',
 additionalClasses: 'city-bg',
-noButton: false
+noButton: false,
+    href: ''
 })
 %>
 
@@ -59,6 +60,7 @@ secondaryText: [
 ],
 ctaButtonText: 'Leer mas',
 additionalClasses: 'dark-blue-bg',
-noButton: false
+noButton: true,
+    href: '/blog/pandemia'
 })
 %>
