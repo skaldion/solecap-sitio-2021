@@ -5,7 +5,9 @@
                 <img class='image' src="<%- image.src %>" alt="<%- image.alt %>">
             </div>
             <div class="col-sm content">
-                <h2><%- heading %></h2>
+                <% if(heading) { %>
+                    <h2><%- heading %></h2>
+                <% } %>
                 <% features.forEach((feature) => { %>
                     <h3><%- feature.title %></h3>
                     <p><%- feature.description %></p>
