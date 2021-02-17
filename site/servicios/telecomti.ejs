@@ -18,7 +18,7 @@ additionalClasses: 'serv-tecno-bg'
 %>
 
 <%- include('/side-image', {
-heading: '',
+heading: 'Mantente comunicado',
 image: { src: '/images/cables.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
 features: [
 { title: '', description: 'Estos servicios están relacionados con elementos de base de datos en su estructura, que van desde cableado para elementos de voz y datos. Contamos con una gran  oferta de equipos de computo, desarrollo de proyectos de esta categoría en nuevas instalaciones o actualización de los elementos que puedan requerir una.' },
@@ -29,11 +29,11 @@ additionalClasses: 'indigo-bg image-left'
 %>
 
 <%- include('/grid', {
-mainText: 'Beneficios',
+mainText: '',
 elements: [
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Actualizado</h3><p>Siempre contarás con las últimas versiones de todos los programas de paquetería que necesites para tu empresa.</p>'},
+{ htmlContent: '<h3>Confidencialidad</h3><p>La red interna de tu empresa estará cuidada y tu información confidencial cuidada.</p>'},
+{ htmlContent: '<h3>Automatización</h3><p>Podrás contar con un espacio totalmente automatizado e inteligente haciendo más eficiente el trabajo.</p>'},
 ],
 additionalClasses: 'grey-bg'
 })
@@ -46,7 +46,8 @@ secondaryText: [
 ],
 ctaButtonText: 'Contactanos!',
 additionalClasses: 'city-bg',
-noButton: false
+noButton: false,
+    href: ''
 })
 %>
 
@@ -59,6 +60,7 @@ secondaryText: [
 ],
 ctaButtonText: 'Leer mas',
 additionalClasses: 'dark-blue-bg',
-noButton: false
+noButton: true,
+    href:'/blog/pandemia'
 })
 %>

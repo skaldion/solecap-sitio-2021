@@ -17,7 +17,7 @@ additionalClasses: 'serv-operaci-bg'
 %>
 
 <%- include('/side-image', {
-heading: '',
+heading: 'No te arriesgues',
 image: { src: '/images/tech.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
 features: [
 { title: '', description: 'Estas actividades son clasificadas como hard y de no ser llevadas a cabo la cadena de suministro puede verse afectada, causando problemas que pueden tener un impacto económico en la empresa. También conocido como mantenimiento industrial, estas actividades son principalmente: ' },
@@ -29,11 +29,11 @@ additionalClasses: 'indigo-bg image-left'
 %>
 
 <%- include('/grid', {
-mainText: 'Beneficios',
+mainText: '',
 elements: [
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
-{ htmlContent: '<h3>Beneficio</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>'},
+{ htmlContent: '<h3>Producción</h3><p>Tu maquinaria siempre va a estar en el mejor estado para que la cadena de producción no se vea afectada y las pérdidas por desechos sean mínimas.</p>'},
+{ htmlContent: '<h3>Calidad</h3><p>Contarás con la mejor tecnología de acuerdo a tus prioridades y presupuesto sin dejar de lado la calidad.</p>'},
+{ htmlContent: '<h3>Sin sorpresas</h3><p>Con nuestro programa de revisión programada evitarás que el proceso se pare en el momento menos deseado.</p>'},
 ],
 additionalClasses: 'grey-bg'
 })
@@ -46,7 +46,8 @@ secondaryText: [
 ],
 ctaButtonText: 'Contactanos!',
 additionalClasses: 'city-bg',
-noButton: false
+noButton: false,
+    href:''
 })
 %>
 
@@ -59,6 +60,7 @@ secondaryText: [
 ],
 ctaButtonText: 'Leer mas',
 additionalClasses: 'dark-blue-bg',
-noButton: false
+noButton: true,
+    href:'/blog/pandemia'
 })
 %>
