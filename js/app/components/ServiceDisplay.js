@@ -12,9 +12,17 @@ app.component('service-display', {
   template: 
   /*html*/
   `<div class="container">
-  <div class="py-5 text-center">
+  <div class="py-5">
     <h2>Cotizaciones</h2>
-    <p class="lead">Calcula el precio de los servicios que buscas, en tiempo real.</p>
+    <p class="lead">Calcula el precio estimado de los servicios que buscas, en tiempo real.</p>
+    <h4>Consideraciones</h4>
+    <ul>
+        <li>Todos los precios estan sujetos a cambios sin previo aviso.</li>
+        <li>Esta cotizacion es informativa mas no determinante en costos finales.</li>
+        <li>Se esta considerando solamente mano de obra o conceptos basicos a desarrollar.</li>
+        <li>Los precios se estableceran de acuerdo a la region.</li>
+        <li>Todos nuestros precios son sin IVA.</li> 
+    </ul>
   </div>
 
   <div class="row">
@@ -106,7 +114,7 @@ app.component('service-display', {
           </div>
         </div>
         <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Enviar cotizacion</button>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Solicitar cotización</button>
       </form>
     </div>
   </div>
