@@ -27,10 +27,19 @@
     }
   }
 
-  @include media-breakpoint-up(md) {
-    .footer-section {
-      padding: 0;
+  .info-table {
+    td {
+      vertical-align: top;
+    }
+    .data {
+      padding-left: 12px;
     }
   }
+
+  //@include media-breakpoint-up(md) {
+  //  .footer-section {
+  //    padding: 0;
+  //  }
+  //}
 
 }
