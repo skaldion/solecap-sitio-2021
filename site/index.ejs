@@ -12,14 +12,13 @@ additionalClasses: 'index-hero-bg'
 })
 %>
 
-<%- include('/cta', {
+<%- include('/banner', {
 mainText: 'Nuestra posicion ante la pandemia',
 secondaryText: [
 'En Solecap sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de tí y los tuyos.'
 ],
 ctaButtonText: 'Leer mas',
 additionalClasses: 'city-bg',
-noButton: true,
 href: '/blog/pandemia'
 })
 %>
@@ -38,15 +37,14 @@ href: ''
 
 <%- include('/servicios') %>
 
-<%- include('/cta', {
+<%- include('/banner', {
 mainText: 'Sanitizacion de espacios',
 secondaryText: [
 'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
 ],
 ctaButtonText: 'Leer mas',
 additionalClasses: 'dark-blue-bg',
-noButton: false,
-href: ''
+href: '/blog/pandemia'
 })
 %>
 
