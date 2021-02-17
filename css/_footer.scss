@@ -16,14 +16,15 @@
     padding: 0;
     li {
       padding: 0.5rem 0;
-      a {
-        color: colors.$blue-003;
-        font-weight: bold;
-        transition: all .2s ease-in-out;
-        &:hover {
-          color: lighten(colors.$blue-003, 20%);
-        }
-      }
+    }
+  }
+
+  a {
+    color: colors.$blue-003;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    &:hover {
+      color: lighten(colors.$blue-003, 20%);
     }
   }
 
@@ -35,11 +36,5 @@
       padding-left: 12px;
     }
   }
-
-  //@include media-breakpoint-up(md) {
-  //  .footer-section {
-  //    padding: 0;
-  //  }
-  //}
 
 }
