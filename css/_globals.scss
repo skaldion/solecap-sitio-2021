@@ -10,6 +10,12 @@ body {
   }
 }
 
+h1, h2 {
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 a, button, .button {
   &:hover {
     cursor: pointer;
@@ -21,11 +27,6 @@ a {
   &:hover {
     text-decoration: none;
   }
-}
-
-h2 {
-  font-family: HallFetica, sans-serif;
-  text-transform: uppercase;
 }
 
 img {
