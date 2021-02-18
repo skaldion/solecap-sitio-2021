@@ -31,7 +31,7 @@
             <div class="col-md-6 col-lg-4 footer-section">
                 <h4>Servicios</h4>
                 <ul>
-                    <% collections.servicios.forEach((navPage) => { %>
+                    <% collections.sortedServices.forEach((navPage) => { %>
                         <% if (!navPage.data || !navPage.data.title) return;%>
                         <li>
                             <a class="navigation-item<%- ` ${page.url === navPage.url && 'active'}` %>"

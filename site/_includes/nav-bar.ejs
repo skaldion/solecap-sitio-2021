@@ -18,7 +18,7 @@
                     <% } %>
                 <% });%>
                     <span class="text-muted separator-bottom d-md-none d-lg-none">Servicios</span>
-                    <% collections.servicios.forEach( servicio => { %>
+                    <% collections.sortedServices.forEach( servicio => { %>
                         <li class='nav-item navigation-item d-md-none d-lg-none <%- ` ${page.url === servicio.url && 'active'}` %>'>
                             <a href="<%- servicio.url %>">
                                 <%= servicio.data.title %>
