@@ -30,7 +30,6 @@ module.exports = function (eleventyConfig) {
 
 	eleventyConfig.addCollection("sortedServices", function(collectionApi) {
 		return collectionApi.getFilteredByTag('servicios').sort((a, b) => {
-			console.log('plop', a.data.title, a.data.order)
 			return a.data.order - b.data.order;
 		});
 	});
