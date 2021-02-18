@@ -32,6 +32,21 @@ img {
   max-width: 100%;
 }
 
+.solecap-blue-bg {
+  background-color: colors.$solecap-bg-03;
+  color: colors.$white;
+}
+
+.solecap-purple-bg {
+  background-color: colors.$solecap-bg-02;
+  color: colors.$white;
+}
+
+.solecap-skyblue-bg {
+  background-color: colors.$solecap-bg-01;
+  color: colors.$white;
+}
+
 .dark-blue-bg {
   background-color: colors.$blue-002;
   color: colors.$white;

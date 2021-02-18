@@ -13,37 +13,37 @@ additionalClasses: 'index-hero-bg'
 %>
 
 <%- include('/banner', {
-mainText: 'Nuestra posicion ante la pandemia',
+mainText: 'Nuestra posicion ante la pandemia.',
 secondaryText: [
 'En Solecap sabemos la importancia de proteger a nuestros clientes aliados por eso ante la situación creada por la emergencia sanitaria hemos reforzado nuestros protocolos de seguridad para cuidar de tí y los tuyos.'
 ],
 ctaButtonText: 'Leer mas',
-additionalClasses: 'city-bg',
+additionalClasses: 'solecap-purple-bg',
 href: '/blog/pandemia'
 })
 %>
 
-<%- include('/cta', {
-mainText: 'Integrated Facilities Management',
-secondaryText: [
-'Nuestro objetivo es brindar servicios de mantenimiento con estándares adecuados para evitar fallos y problemas que puedan afectar a la cadena de producción,enfocándonos en ofrecer la mejor calidad y servicio en el área de "Facility Services".'
+<%- include('/side-image', {
+heading: 'Integrated Facilities Management.',
+image: { src: '/images/facility.jpg', alt: 'mostrar nu marketplace en la pantalla de la laptop' },
+features: [
+{ title: '', description: 'Nuestro objetivo es ayudarte a tener un desempeño excelente manteniendo todos los insumos relacionados con la cadena de producción en perfecto estado.' },
+{ title: '', description: '' },
 ],
-noButton: true,
-ctaButtonText: '',
-additionalClasses: 'indigo-bg',
-href: ''
+additionalClasses: 'solecap-blue-bg',
+imgClasses: "order-2"
 })
 %>
 
 <%- include('/servicios') %>
 
 <%- include('/banner', {
-mainText: 'Sanitizacion de espacios',
+mainText: 'Sanitizacion de espacios.',
 secondaryText: [
 'Estemos en situación de emergencia sanitaria o no, la sanitización de espacios debe ser una prioridad de todas las empresas para evitar problemas de salud en colaboradores y clientes.'
 ],
 ctaButtonText: 'Leer mas',
-additionalClasses: 'dark-blue-bg',
+additionalClasses: 'solecap-purple-bg',
 href: '/blog/pandemia'
 })
 %>
@@ -55,7 +55,8 @@ features: [
 { title: 'Servicios a la medida.', description: 'Ofrecemos a nuestro cliente un producto hecho a la medida de sus necesidades que va desde lo más específico hasta un servicio integral. Nos enfocamos en ofrecer resultados desde el primer momento a precios accesibles y competitivos sin descuidar la calidad.' },
 { title: 'Empresa 100% mexicana.', description: 'Somos una empresa 100% mexicana que conoce la cultura e idiosincrasia del trabajo requerido por cada cliente.' },
 ],
-additionalClasses: 'indigo-bg image-left'
+additionalClasses: 'solecap-blue-bg',
+imgClasses: ""
 })
 %>
 
@@ -79,7 +80,7 @@ elements: [
 { htmlContent: '<h3>ISO 9001:2015</h3><p></p>'},
 { htmlContent: '<h3>Empresa Socialmente Responsable</h3><p></p>'},
 ],
-additionalClasses: '-bg'
+additionalClasses: 'solecap-skyblue-bg'
 })
 %>
 
@@ -89,7 +90,7 @@ secondaryText: [
 'Somos unica empresa 100%  dentro del sector enfocada en brindar servicios de facilities management. Conocemos cuales son las necesidades del mercado y como atacarlas, más de xx años nos avalan.'
 ],
 ctaButtonText: 'Contactanos!',
-additionalClasses: 'city-bg',
+additionalClasses: 'solecap-purple-bg',
 noButton: false,
 href: ''
 })
