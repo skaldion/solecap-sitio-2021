@@ -10,6 +10,12 @@ body {
   }
 }
 
+h1, h2 {
+  font-family: "Arial Black";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 a, button, .button {
   &:hover {
     cursor: pointer;
@@ -21,11 +27,6 @@ a {
   &:hover {
     text-decoration: none;
   }
-}
-
-h2 {
-  font-family: HallFetica, sans-serif;
-  text-transform: uppercase;
 }
 
 img {
@@ -42,8 +43,18 @@ img {
   color: colors.$white;
 }
 
-.solecap-skyblue-bg {
+.solecap-purple-light-bg {
+  background-color: colors.$solecap-bg-04;
+  color: colors.$white;
+}
+
+.solecap-green-bg {
   background-color: colors.$solecap-bg-01;
+  color: colors.$white;
+}
+
+.solecap-green-light-bg {
+  background-color: colors.$solecap-bg-05;
   color: colors.$white;
 }
 
@@ -63,7 +74,12 @@ img {
 }
 
 .light-blue-bg {
-  background-color: lighten(colors.$blue-004, 30%);
+  background-color: lighten(colors.$blue-001, 30);
+  color: colors.$white;
+}
+
+.sky-blue-bg {
+  background-color: lighten(colors.$blue-001, 50);
   color: colors.$white;
 }
 
@@ -170,8 +186,13 @@ img {
 
 }
 
-.indigo-bg {
-  background-color: #91456A;
+.maroon-bg {
+  background-color: colors.$maroon;
+  color: colors.$white;
+}
+
+.maroon-light-bg {
+  background-color: lighten(colors.$maroon, 30);
   color: colors.$white;
 }
 
@@ -183,4 +204,10 @@ img {
 
 .button-group {
   text-align: center;
+}
+
+.svg-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
 }
