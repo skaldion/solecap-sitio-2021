@@ -17,10 +17,10 @@ app.component('service-display', {
     <p class="lead">Calcula el precio estimado de los servicios que buscas, en tiempo real.</p>
     <h4>Consideraciones</h4>
     <ul>
-        <li>Todos los precios estan sujetos a cambios sin previo aviso.</li>
-        <li>Esta cotizacion es informativa mas no determinante en costos finales.</li>
-        <li>Se esta considerando solamente mano de obra o conceptos basicos a desarrollar.</li>
-        <li>Los precios se estableceran de acuerdo a la region.</li>
+        <li>Todos los precios están sujetos a cambios sin previo aviso.</li>
+        <li>Esta cotización es informativa más no determinante en costos finales.</li>
+        <li>Se está considerando solamente mano de obra o conceptos básicos a desarrollar.</li>
+        <li>Los precios se establecerán de acuerdo a la región.</li>
         <li>Todos nuestros precios son sin IVA.</li> 
     </ul>
   </div>
