@@ -59,6 +59,7 @@ app.component('service-display', {
                 <small>Precio unitario </small>
                 <span>{{ formatCurrency(item.price) }} X </span> 
                 <input 
+                    :name="item.name"
                     v-model='item.quantity'
                     type='number' 
                     size='3' 
@@ -92,21 +93,21 @@ app.component('service-display', {
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" required>
+                <input name="email" type="email" class="form-control" id="email" required>
                 <div class="invalid-feedback">
                     Escribe tu cuenta de correo electrónico.
                 </div>
             </div>
           <div class="col-md-6 mb-3">
             <label for="firstName">Nombre <span class="text-muted">(Opcional)</span></label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="">
+            <input name="nombre" type="text" class="form-control" id="firstName" placeholder="" value="">
           </div>
         </div>
 
         <div class="mb-3">
           <label for="preguntas">Preguntas <span class="text-muted">(Opcional)</span></label>
           <div class="input-group">
-            <textarea class="form-control" id="preguntas"></textarea>
+            <textarea name="preguntas" class="form-control" id="preguntas"></textarea>
           </div>
         </div>
         <hr class="mb-4">
