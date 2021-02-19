@@ -1,12 +1,12 @@
 ---
-permalink: 404.html
+permalink: /exito/index.html
 eleventyExcludeFromCollections: true
 ---
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<title>No encontramos la página que estás buscando</title>
+		<title>Envío exitoso</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style>
 			* {
@@ -33,11 +33,25 @@ eleventyExcludeFromCollections: true
 				color: #555;
 				font-size: 2em;
 				font-weight: 400;
+				margin-bottom: 10px;
+			}
+
+			h2 {
+				margin-top: 20px;
 			}
 
 			p {
 				margin: 0 auto;
 				width: 280px;
+			}
+
+			a {
+				text-decoration: none;
+                color: #26aadd;
+			}
+
+			a:hover {
+                color: #3276b1;
 			}
 
 			@media only screen and (max-width: 280px) {
@@ -55,8 +69,9 @@ eleventyExcludeFromCollections: true
 	</head>
 
 	<body>
-		<h1>No encontramos la página que estás buscando</h1>
-		<p>Disculpa las molestias pero la página que estás buscando no existe.</p>
+		<h1>Forma enviada exitosamente</h1>
+		<p>Hemos recibido tu información.</p><p> Nos pondremos en contacto contigo en cuanto nos sea posible.</p>
+		<h2><a href='/'>Regresar al sitio de Solecap</a></h2>
 	</body>
 </html>
 <!-- IE needs 512+ bytes: https://docs.microsoft.com/archive/blogs/ieinternals/friendly-http-error-pages -->
