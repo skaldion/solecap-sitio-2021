@@ -43,7 +43,7 @@ app.component('service-display', {
           <div class="input-group-append">
             <button 
                 v-on:click="addToCart"
-                type="submit" class="btn btn-secondary">Agregar</button>
+                class="btn btn-secondary">Agregar</button>
           </div>
         </div>
       <ul class="list-group mb-3">
