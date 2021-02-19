@@ -89,28 +89,25 @@ app.component('service-display', {
       </ul>
     </div>
     <div class="col-md-6 order-md-1">
-      <form class="needs-validation" novalidate="">
+      <form name='cotizacion-solecap' data-netlify='true' class="needs-validation" method='POST' novalidate="">
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">Nombre</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Valid first name is required.
-            </div>
-          </div>
             <div class="col-md-6 mb-3">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" required>
                 <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
+                    Escribe tu cuenta de correo electrónico.
                 </div>
             </div>
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre <span class="text-muted">(Opcional)</span></label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="">
+          </div>
         </div>
 
         <div class="mb-3">
           <label for="preguntas">Preguntas <span class="text-muted">(Opcional)</span></label>
           <div class="input-group">
-            <textarea class="form-control" id="preguntas" required=""></textarea>
+            <textarea class="form-control" id="preguntas"></textarea>
           </div>
         </div>
         <hr class="mb-4">
