@@ -89,7 +89,6 @@ app.component('service-display', {
       </ul>
     </div>
     <div class="col-md-6 order-md-1">
-      <form name='cotizacion-solecap' data-netlify='true' class="needs-validation" method='POST' novalidate="">
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="email">Email</label>
@@ -112,7 +111,6 @@ app.component('service-display', {
         </div>
         <hr class="mb-4">
         <button class="btn btn-primary btn-lg btn-block" type="submit">Solicitar cotización</button>
-      </form>
     </div>
   </div>
 </div>`,
