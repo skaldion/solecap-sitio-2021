@@ -51,23 +51,23 @@ app.component('service-display', {
         <li 
             v-for="(item, index) in cart" 
             :key='item.id'
-            class="list-group-item d-flex justify-content-between lh-condensed" >
-            <div>
+            class="cotizacion-item list-group-item d-flex justify-content-between lh-condensed" >
+            <div class='col descripcion'>
                 <h6 class="my-0">{{item.name}}</h6>
                 <small class="text-muted">{{item.description}}</small>
             </div>
-            <div class="text-muted">
-                <small>Precio unitario </small>
-                <span>{{ formatCurrency(item.price) }} X </span> 
+            <div class="col text-muted">
+                <span>{{ formatCurrency(item.price) }} X </span>                 
+            </div>
+            <div class='col'>
                 <input 
                     :name="item.name"
                     v-model='item.quantity'
                     type='number' 
                     size='3' 
                     minlength='1' 
-                    maxlength='999'>
-                <span> = {{ formatCurrency(calculateItemPrice(item)) }}</span>
-            </div>
+                    maxlength='999'>  </div>
+            <div class='col'><span>{{ formatCurrency(calculateItemPrice(item)) }}</span></div>
           <div 
             class='close-button'
             v-on:click='removeFromCart(index)'
