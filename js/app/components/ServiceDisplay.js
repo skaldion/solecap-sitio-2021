@@ -26,7 +26,7 @@ app.component('service-display', {
   </div>
 
   <div class="row">
-    <div class="col-md-6 mb-4">
+    <div class="col-lg-6 mb-4">
       <h4 class="d-flex justify-content-between align-items-center mb-3">
         <span class="text-muted">Servicios</span>
         <span class="badge badge-secondary badge-pill">{{cart.length}}</span>
@@ -48,6 +48,22 @@ app.component('service-display', {
           </div>
         </div>
       <ul class="list-group mb-3">
+        <li
+            v-show='cart.length'
+            class="cotizacion-item list-group-item d-flex justify-content-between lh-condensed header">
+            <div class='col descripcion'>
+              Descripcion
+            </div>
+            <div class='col price'>
+              Precio
+            </div>
+            <div class='col input'>
+              Cantidad
+            </div>
+            <div class='col'>
+              Subtotal
+            </div>
+        </li>
         <li 
             v-for="(item, index) in cart" 
             :key='item.id'
@@ -56,10 +72,10 @@ app.component('service-display', {
                 <h6 class="my-0">{{item.name}}</h6>
                 <small class="text-muted">{{item.description}}</small>
             </div>
-            <div class="col text-muted">
-                <span>{{ formatCurrency(item.price) }} X </span>                 
-            </div>
-            <div class='col'>
+            <div class="col text-muted price">
+                <span>{{ formatCurrency(item.price) }}</span>    
+            </div> 
+            <div class="col input">            
                 <input 
                     :name="item.name"
                     v-model='item.quantity'
@@ -90,7 +106,7 @@ app.component('service-display', {
         </li>
       </ul>
     </div>
-    <div class="col-md-6 order-md-1">
+    <div class="col-lg-6 order-md-1">
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="email">Email</label>
