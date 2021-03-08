@@ -4,7 +4,7 @@ description: Tu seguridad y salud no es un juego, en Solecap queremos protegerte
 date: 2021-02-15
 layout: blog-base.ejs
 author: Diego Remirez
-imgSrc: '/images/ambient.jpg'
+imgSrc: '/images/ambient.webp'
 href: '/blog/pandemia'
 tags:
 - pandemia
@@ -28,4 +28,4 @@ En definitiva en Solecap pensamos que la pandemia fue un momento de incertidumbr
 
 Algunos de nuestros clientes durante el último año han sido desde restaurantes de comida italiana hasta domicilios privados. Aquí te mostramos un ejemplo de nuestro trabajo con estos clientes que depositaron su confianza en Solecap.
 
-![](/images/ambient.jpg)
+![](/images/ambient.webp)
