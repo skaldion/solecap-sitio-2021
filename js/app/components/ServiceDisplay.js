@@ -144,6 +144,7 @@ app.component('service-display', {
               return;
           }
           this.$emit('add-to-cart', this.selected)
+          this.selected=0
       },
       removeFromCart(index) {
           this.$emit('remove-from-cart', index)
