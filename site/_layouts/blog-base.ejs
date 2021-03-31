@@ -15,6 +15,7 @@ layout: base.ejs
                 <div class='row'><div class='col'><h4>Más de nuestro blog:</h4></div></div>
                 <div class='row cards-section'>
                     <% collections.blog.forEach(post => {%>
+                        <% if(page.url === post.data.page.url) { return; } %>
                         <div class='col'>
                             <% if(post.data.href) { %> <a href='<%- post.data.href %>'> <% } %>
                                 <div class="card mb-4 box-shadow">
