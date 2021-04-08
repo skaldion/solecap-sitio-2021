@@ -16,7 +16,7 @@ layout: base.ejs
                 <div class='row cards-section'>
                     <% collections.blog.forEach(post => {%>
                         <% if(page.url === post.data.page.url) { return; } %>
-                        <div class='col'>
+                        <div class='col-md-12 col-sm-6'>
                             <% if(post.data.href) { %> <a href='<%- post.data.href %>'> <% } %>
                                 <div class="card mb-4 box-shadow">
                                     <img class="card-img-top" alt="<%- post.data.imgAlt %>" style="height: 225px; width: 100%; display: block;" src="<%- post.data.imgSrc %>">
