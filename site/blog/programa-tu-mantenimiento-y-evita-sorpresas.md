@@ -1,7 +1,7 @@
 ---
 title: Programa tu Mantenimiento y Evita sorpresas
 description: Uno de los grandes quebraderos de cabeza en toda empresa es el mantenimiento de la maquinaria por eso es de suma importancia programarlo con anticipación.
-date: 2021-04-07
+date: 2021-04-14
 layout: blog-base.ejs
 author: Diego Remirez
 imgSrc: '/images/mantenimiento.jpg'
