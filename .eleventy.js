@@ -25,7 +25,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.setLibrary("md", markdownLibrary);
 
 	eleventyConfig.addCollection("latestPosts", function(collectionApi) {
-		return collectionApi.getFilteredByTag('blog').filter((item, index) => index < 3 );
+		return collectionApi.getFilteredByTag('blog')
+			.filter((item, index) => index < 6 )
+			.sort((a, b) => b.date - a.date);
 	});
 
 	eleventyConfig.addCollection("sortedServices", function(collectionApi) {
