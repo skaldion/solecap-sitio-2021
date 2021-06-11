@@ -10,7 +10,7 @@
     margin-bottom: 20px;
   }
 
-  .image {
+  .image-col {
     text-align: center;
   }
 
@@ -19,10 +19,10 @@
       margin-bottom: 0;
     }
 
-    .image {
+    .image-col {
       order: 2;
     }
-    .content {
+    .content-col {
       order: 1;
     }
   }
@@ -35,11 +35,11 @@
     img {
       margin-bottom: 0;
     }
-    .image {
+    .image-col {
       text-align: left;
     }
     &.image-right {
-      .content {
+      .content-col {
         margin-bottom: 0;
       }
     }
