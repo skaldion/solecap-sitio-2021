@@ -14,6 +14,7 @@ $(document).ready(() => {
 				event.stopPropagation()
 			}
 			form.addClass('was-validated')
+
 		})
 	})
 });
